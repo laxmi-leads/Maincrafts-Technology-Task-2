@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:linear-gradient(
+90deg,
+#020b2f,
+#162a6c
+);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#03081f;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px 80px;
+min-height:100vh;
+}
+
+.hero h1{
+font-size:70px;
+background:linear-gradient(
+to right,
+#4da6ff,
+#d946ef
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-img img{
+width:380px;
+height:380px;
+border-radius:50%;
+border:5px solid #4da6ff;
+}
+
+.btns{
+margin-top:20px;
+}
+
+button{
+padding:14px 30px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:linear-gradient(
+to right,
+#4f7cff,
+#d946ef
+);
+color:white;
+font-size:16px;
+}
+
+.outline{
+background:none;
+border:2px solid #4f7cff;
+}
+
+section{
+padding:100px 80px;
+}
+
+h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+}
+
+.about-container,
+.skills-container,
+.project-container,
+.contact-container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card,
+.skill-box,
+.project-card,
+.achievement-card{
+background:rgba(0,0,0,0.25);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(8px);
+}
+
+.skill-box span{
+display:inline-block;
+padding:10px 15px;
+background:#20367a;
+border-radius:8px;
+margin:5px;
+}
+
+.project-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.project-card{
+width:500px;
+}
+
+.achievement-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+form{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+textarea{
+padding:15px;
+background:#0a133a;
+border:none;
+border-radius:10px;
+color:white;
+}
+
+textarea{
+height:150px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero-img img{
+width:250px;
+height:250px;
+margin-top:30px;
+}
+
+nav{
+padding:20px;
+}
+
+section{
+padding:60px 20px;
+}
+
+}
